@@ -27,4 +27,5 @@
             @endforeach
         </tbody>
     </table>    
+    <a href="{{route('comics.create')}}">Aggiungi</a>
 @endsection 

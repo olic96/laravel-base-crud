@@ -44,4 +44,5 @@
         </div>
         <button>Aggiungi</button>
     </form>
+    <a href="{{route('comics.index')}}">Indietro</a>
 @endsection 
