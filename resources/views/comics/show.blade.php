@@ -1,10 +1,10 @@
-@extends('layout.base')
+@extends('layouts.base')
 
 @section('page-title')
     {{$comic->title}}
 @endsection
 
-@section('page-title')
+@section('page-content')
     <h1>{{$comic->title}}</h1>
     <div>
         {{$comic->description}}
