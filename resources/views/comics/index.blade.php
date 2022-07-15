@@ -20,9 +20,9 @@
                     <td>{{$comic->title}}</td>
                     <td>{{$comic->description}}</td>
                     <td>{{$comic->price}}</td>
-                    <td><a href="{{route('comic.show', $comic->id)}}">Visualizza</a></td>
-                    <td><a href="{{route('comic.update', $comic->id)}}">Modifica</a></td>
-                    <td><a href="{{route('comic.destroy', $comic->id)}}">Elimina</a></td>
+                    <td><a href="{{route('comics.show', $comic->id)}}">Visualizza</a></td>
+                    <td><a href="{{route('comics.update', $comic->id)}}">Modifica</a></td>
+                    <td><a href="{{route('comics.destroy', $comic->id)}}">Elimina</a></td>
                 </tr>
             @endforeach
         </tbody>
