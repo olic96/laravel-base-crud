@@ -48,6 +48,7 @@ class ComicController extends Controller
         $newComic->series = $data['series']; 
         $newComic->sale_date = $data['sale_date']; 
         $newComic->type = $data['type']; 
+        //newComic->fill($data);
 
         $newComic->save();
 
@@ -85,7 +86,7 @@ class ComicController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**
