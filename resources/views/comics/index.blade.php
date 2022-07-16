@@ -20,9 +20,15 @@
                     <td>{{$comic->title}}</td>
                     <td>{{$comic->description}}</td>
                     <td>{{$comic->price}}</td>
-                    <td><a href="{{route('comics.show', $comic->id)}}">Visualizza</a></td>
-                    <td><a href="{{route('comics.edit', $comic->id)}}">Modifica</a></td>
-                    <td><a href="{{route('comics.destroy', $comic->id)}}">Elimina</a></td>
+                     <td>
+                        <a href="{{route('comics.show', $comic->id)}}">Visualizza</a>
+                        <a href="{{route('comics.edit', $comic->id)}}">Modifica</a>
+                        <form action="{{route('comics.destroy', $comic->id)}}" method="post">
+                            @csrf
+                            @method('delete')
+                            <button>Elimina</button>
+                        </form>
+                    </td> 
                 </tr>
             @endforeach
         </tbody>
